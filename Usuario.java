@@ -56,4 +56,37 @@ public class Usuario
         System.out.println("Calorias ingeridos:                                                                 " + calorias );
     }
     
+    public float getPorcentajeProteinas()
+    {
+        float total = proteinas + grasas + carbohidratos;
+        float prot = proteinas * total / 100;
+        return prot;
+    }
+    
+    public float getPorcentajeCarbohidratos()
+    {
+       float total = proteinas + grasas + carbohidratos;
+       float carb = carbohidratos * total / 100;
+       return carb;
+    }
+    
+    public float getPorcentajeGrasas()
+    {
+        float total = proteinas + grasas + carbohidratos;
+        float gras = grasas * total / 100;
+        return gras;
+        
+    }
+    
+    /**
+     * Metodo que imprime por pantallo los datos del usuario
+     */
+    public void mostrarDatosPorcentaje()
+    {
+        System.out.println("Nombre:                                                                             " + nombre);
+        System.out.println("Gramos de proteinas ingeridos:                                                      " + getPorcentajeProteinas() + "%");
+        System.out.println("Gramos de carbohidratos ingeridos:                                                  " + getPorcentajeCarbohidratos() + "%");
+        System.out.println("Gramos de grasas ingeridos:                                                         " + getPorcentajeGrasas() + "%" );
+        System.out.println("Calorias ingeridos:                                                                 " + calorias );
+    }
 }
