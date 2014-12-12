@@ -32,12 +32,42 @@ public class Alimento
         calorias = (proteinas * 4f) + (carbohidratos * 4f ) + (grasas * 9f);
         
     }
-  
     
+    /**
+     * Este metodo devuelve las proteinas del alimento por gramo
+     */
+    public float getProteinas()
+    {
+         return proteinas;
+    }
+    
+    /**
+     * Este metodo devuelve las carbohidratos del alimento por gramo
+     */
+    public float getCarbohidratos()
+    {
+         return carbohidratos;
+    }
+    
+    /**
+     * Este metodo devuelve las grasas del alimento por gramo
+     */
+    public float getGrasas()
+    {
+         return grasas;
+    }
+    
+    /**
+     * Este metodo devuelve las calorias del alimento por gramo
+     */
+    public float getCalorias()
+    {
+        return calorias;
+    }
     /**
      * Este constructor crea un objeto alimento
      */
-    public void mostrarDatos()
+    public void muestraDatos()
     {
         System.out.println("Nombre:                                                                             " + nombre);
         System.out.println("Proteinas por cada 100 gramos:                                                      " + proteinas);
